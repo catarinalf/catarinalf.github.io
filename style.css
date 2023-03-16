@@ -1,0 +1,540 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+/* General Style */
+
+body{
+    margin-bottom: 100px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    background: #b0c9e5;
+    color: black;
+    overflow-x: hidden;
+    height: 100%;
+}
+
+ul{list-style: none;}
+
+img{
+    max-width: 100%;
+}
+
+/* Links */
+
+a{
+    text-decoration: none !important;
+    color: #E0E0E0;
+    transition: all 0.5s ease-in-out;
+}
+
+h1 {
+    font-size: 40px;
+    align-items: center;
+  }
+  
+  h2 {
+    font-size: 30px;
+  }
+  
+  p {
+    font-size: 20px;
+  }
+
+
+/* Navigation bar style */
+
+nav{
+    width: 100%;
+    background-color: #be8bdc;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+}
+
+.navbar{
+    position: relative;
+}
+
+.navbar-collapse{
+    text-align: center;
+}
+
+.navbar-light .navbar-toggler:focus{
+    color: #f8b195;
+    box-shadow: 0 0 0 2px;
+}
+
+.navbar ul li{
+    position: relative;
+    margin-left: 2.5em;
+    margin-right: 1rem;
+}
+
+.navbar ul li a{
+    position: relative;
+    display: inline;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 14px;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    color: #E0E0E0;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar{
+  width: 10px;
+}
+
+::-webkit-scrollbar-track{
+  background: white;
+}
+
+::-webkit-scrollbar-thumb{
+  background: rgb(190, 190, 190);
+}
+
+/* Bubble 1 - Home section*/
+
+.section-bubble, .section-bubble_type-b, .section-bubble_type-a, .section-bubble5, .section-bubble4, .section-bubble3, .section-bubble2, .section-bubble1 {
+    margin-bottom: 20vw;
+    position: relative;
+  }
+ 
+ .section-bubble:after, .section-bubble_type-b:after, .section-bubble_type-a:after, .section-bubble5:after, .section-bubble4:after, .section-bubble3:after, .section-bubble2:after, .section-bubble1:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 20.5vw;
+    background: url("") green;
+    background-size: 100%;
+    transform: translate(0, 100%);
+  }
+  
+.section-bubble1 {
+    background-color: #ffffff;
+  }
+
+.section-bubble1 .banner-section{
+    position: relative;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.section-bubble1 .banner-title{
+    position: relative;
+    margin: 0;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: black;
+}
+
+.section-bubble1 .banner-desc{
+    position: relative;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.section-bubble1 .banner-btn{
+    position: relative;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #c2c1c1;
+}
+
+.section-bubble1 .container {
+    position: relative;
+    text-align: center;
+    color: black;  
+}
+
+/* Bubble 2 - About section*/
+  
+.section-bubble1:after {
+    background-color: #be8bdc   ;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 1185 248'><circle cx='76' cy='121.1' r='20' class='a'/><circle cx='870' cy='201.1' r='11' class='a'/><circle cx='814.5' cy='165.6' r='24.5' class='a'/><path d='M0 0v17.7c22.7 14.8 53 31.9 90.7 51.5 150.8 78 322 116.6 424.8 69.3 102.9-47.4 138-69.3 210.8-69.3s118.3 48.6 219.5 38.3 76.3-59.3 188.7-59.3c18.9 0 35.5 2.6 50.5 6.8V0H0z' class='a'/></svg>");
+  }
+  
+  .section-bubble2 {
+    background-color: #be8bdc  ;
+  }
+
+  .section-bubble2 .reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+  .section-bubble2 .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .section-bubble2 .about-section{
+    height: 1200px;
+    display: inline-block;
+    width: 100%;
+}
+
+.section-bubble2 .about-section{
+    position: relative;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.section-bubble2 .about-title{
+    position: relative;
+    margin: 0;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    color: black;
+    text-align: center;
+}
+
+.section-bubble2 .about-desc{
+    position: relative;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.section-bubble2 img{
+    max-width: 70%;
+    clip-path: circle();
+    display: block;
+    margin: 0 auto 0 auto;
+}
+
+.section-bubble2 .container {
+    position: relative;
+    text-align: justify;
+    color: black;
+}
+
+/* Bubble 3 - About section*/
+
+.tg  {
+    border-collapse:collapse;
+    border-spacing:0;
+    margin:0px auto;
+}
+
+.tg td{
+    border-color:rgba(0, 0, 0, 0);
+    border-style:solid;
+    border-width:1px;
+    font-family:'Poppins', sans-serif;
+    font-size:14px;
+    overflow:hidden;
+    padding:19px 20px;
+    word-break:normal;
+}
+
+.tg th{
+    border-color:rgba(0, 0, 0, 0);
+    border-style:solid;
+    border-width:1px;
+    font-family:'Poppins', sans-serif;
+    font-size:14px;
+    font-weight:normal;
+    overflow:hidden;
+    padding:19px 20px;
+    word-break:normal;
+}
+
+.tg-img{
+    border-color:rgba(0, 0, 0, 0);
+    text-align:center;
+    vertical-align:middle;
+    width: 100%;
+}
+
+.tg .tg-text-1{
+    color: black;
+    text-align:center;
+    vertical-align:middle;
+    font-size:40px;
+    font-weight: 400px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tg .tg-text-2{
+    color: black;
+    text-align:center;
+    vertical-align:middle;
+    font-size:20px;
+    font-weight: 100px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+@media screen and (max-width: 767px) {
+    .tg {width: auto !important;}
+    .tg col {width: auto !important;}
+    .tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;margin: auto 0px;}
+}
+
+.section-bubble3{
+    background-color: #dc8ba3 ;
+}
+
+.section-bubble3 .reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.section-bubble3 .reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.section-bubble3 .container{
+    color: black;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    width: 50%;
+    justify-content: space-evenly;
+}
+
+  .section-bubble2:after {
+    background-color: #dc8ba3 ;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1185 248'><path d='M50.5 199.8c112.4 0 87.5-49 188.7-59.3s146.7 38.3 219.5 38.3 107.9-21.9 210.8-69.3c102.8-47.3 274-8.7 424.8 69.3 37.7 19.5 68 36.7 90.7 51.5V0H0v193C15 197.2 31.6 199.8 50.5 199.8zM1109 106.9c11 0 20 9 20 20 0 11-9 20-20 20s-20-9-20-20C1089 115.9 1098 106.9 1109 106.9zM370.5 57.9c13.5 0 24.5 11 24.5 24.5 0 13.5-11 24.5-24.5 24.5S346 95.9 346 82.4C346 68.9 357 57.9 370.5 57.9zM315 35.9c6.1 0 11 4.9 11 11s-4.9 11-11 11 -11-4.9-11-11S308.9 35.9 315 35.9z' fill='%23be8bdc'/></svg>");
+  }
+  
+  .section-bubble3 h1 {
+    color: black;
+    text-align: center;
+  }
+  .section-bubble3 p {
+    color: black;
+    opacity: 0.8;
+    text-size-adjust: 18px;
+    text-align: center;
+  }
+
+  /*Projects section*/
+
+  .section-bubble4 .reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+  .section-bubble4 .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .section-bubble4 .project-section{
+    display: inline-block;
+    width: 100%;
+}
+
+.section-bubble4 .project-section{
+    position: relative;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.section-bubble4 .project-title{
+    position: relative;
+    margin: 0;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    color: black;
+    text-align: center;
+}
+
+.section-bubble4 .project-desc{
+    position: relative;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.section-bubble4 img{
+    max-width: 100%;
+    display: block;
+    margin: 0 auto 0 auto;
+    border-radius: 20px;
+}
+
+.section-bubble4 .container {
+    position: relative;
+    text-align: justify;
+    color: black;
+}
+
+  .section-bubble3:after {
+    background-color: #f5b488   ;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='%23dc8ba3' viewBox='0 0 1185 248'><circle cx='76' cy='121.1' r='20' class='a'/><circle cx='870' cy='201.1' r='11' class='a'/><circle cx='814.5' cy='165.6' r='24.5' class='a'/><path d='M0 0v17.7c22.7 14.8 53 31.9 90.7 51.5 150.8 78 322 116.6 424.8 69.3 102.9-47.4 138-69.3 210.8-69.3s118.3 48.6 219.5 38.3 76.3-59.3 188.7-59.3c18.9 0 35.5 2.6 50.5 6.8V0H0z' class='a'/></svg>");
+  }
+
+  .section-bubble4 {
+    background-color: #f5b488   ;
+  }
+  
+  .section-bubble4 .container{
+    position: relative;
+    text-align: justify;
+    color: black;
+  }
+
+  .section-bubble4 h1{
+    color: black;
+    text-align: center;
+    text-transform: capitalize;
+    text-size-adjust: 40px;
+    font-weight: 400px;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .section-bubble4 p{
+    color: black;
+    text-align:center;
+    vertical-align:middle;
+    font-size:20px;
+    font-weight: 100px;
+    font-family: 'Quicksand', sans-serif;
+  }
+
+  /*Contact section*/
+
+  .section-bubble4:after {
+    background-color: #f5d488  ;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1185 248'><path d='M50.5 199.8c112.4 0 87.5-49 188.7-59.3s146.7 38.3 219.5 38.3 107.9-21.9 210.8-69.3c102.8-47.3 274-8.7 424.8 69.3 37.7 19.5 68 36.7 90.7 51.5V0H0v193C15 197.2 31.6 199.8 50.5 199.8zM1109 106.9c11 0 20 9 20 20 0 11-9 20-20 20s-20-9-20-20C1089 115.9 1098 106.9 1109 106.9zM370.5 57.9c13.5 0 24.5 11 24.5 24.5 0 13.5-11 24.5-24.5 24.5S346 95.9 346 82.4C346 68.9 357 57.9 370.5 57.9zM315 35.9c6.1 0 11 4.9 11 11s-4.9 11-11 11 -11-4.9-11-11S308.9 35.9 315 35.9z' fill='%23f5b488'/></svg>");
+  }
+
+  .section-bubble5 {
+    background-color: #f5d488  ;
+  }
+
+  .section-bubble5 .contact-section{
+    background: url() no-repeat center;
+    background-size: cover;
+    padding: 40px 0;
+  }
+  
+  .section-bubble5 .contact-section h1{
+    text-align: center;
+    color: #ddd;
+  }
+  
+  .section-bubble5 .border{
+    width: 100px;
+    height: 10px;
+    background: #ffffff;
+    margin: 40px auto;
+  }
+  
+  .section-bubble5 .contact-form{
+    max-width: 600px;
+    font-weight: 300px;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+  }
+  
+  .section-bubble5 .contact-form-text{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 16px 0;
+    border: 0;
+    background: #ffffff;
+    padding: 20px 40px;
+    outline: none;
+    color: #000000;
+    transition: 0.5s;
+  }
+  
+  .section-bubble5 .contact-form-text:focus{
+    box-shadow: 0 0 10px 4px #393939;
+  }
+  
+  .section-bubble5 textarea.contact-form-text{
+    resize: none;
+    height: 120px;
+  }
+  
+  .section-bubble5 .contact-form-btn{
+    float: right;
+    border: 0;
+    background: #ffffff;
+    color: #070707;
+    padding: 12px 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  
+  .section-bubble5 .contact-form-btn:hover{
+    background: #235284;
+  }
+
+  /*Footer section*/
+
+  .section-bubble5:after {
+    background-color: #b0c9e5   ;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1185 248'><path d='M50.5 199.8c112.4 0 87.5-49 188.7-59.3s146.7 38.3 219.5 38.3 107.9-21.9 210.8-69.3c102.8-47.3 274-8.7 424.8 69.3 37.7 19.5 68 36.7 90.7 51.5V0H0v193C15 197.2 31.6 199.8 50.5 199.8zM1109 106.9c11 0 20 9 20 20 0 11-9 20-20 20s-20-9-20-20C1089 115.9 1098 106.9 1109 106.9zM370.5 57.9c13.5 0 24.5 11 24.5 24.5 0 13.5-11 24.5-24.5 24.5S346 95.9 346 82.4C346 68.9 357 57.9 370.5 57.9zM315 35.9c6.1 0 11 4.9 11 11s-4.9 11-11 11 -11-4.9-11-11S308.9 35.9 315 35.9z' fill='%23f5d488'/></svg>");
+  }
+
+  .section-bubble6 {
+    background: #b0c9e5;
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .section-bubble_type-a:after {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='red' viewBox='0 0 1185 248'><circle cx='76' cy='121.1' r='20' class='a'/><circle cx='870' cy='201.1' r='11' class='a'/><circle cx='814.5' cy='165.6' r='24.5' class='a'/><path d='M0 0v17.7c22.7 14.8 53 31.9 90.7 51.5 150.8 78 322 116.6 424.8 69.3 102.9-47.4 138-69.3 210.8-69.3s118.3 48.6 219.5 38.3 76.3-59.3 188.7-59.3c18.9 0 35.5 2.6 50.5 6.8V0H0z' class='a'/></svg>");
+  }
+  
+  .section-bubble_type-b:after {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1185 248'><path d='M50.5 199.8c112.4 0 87.5-49 188.7-59.3s146.7 38.3 219.5 38.3 107.9-21.9 210.8-69.3c102.8-47.3 274-8.7 424.8 69.3 37.7 19.5 68 36.7 90.7 51.5V0H0v193C15 197.2 31.6 199.8 50.5 199.8zM1109 106.9c11 0 20 9 20 20 0 11-9 20-20 20s-20-9-20-20C1089 115.9 1098 106.9 1109 106.9zM370.5 57.9c13.5 0 24.5 11 24.5 24.5 0 13.5-11 24.5-24.5 24.5S346 95.9 346 82.4C346 68.9 357 57.9 370.5 57.9zM315 35.9c6.1 0 11 4.9 11 11s-4.9 11-11 11 -11-4.9-11-11S308.9 35.9 315 35.9z' fill='red'/></svg>");
+  }
+
+.section-bubble6 .social-media .footer-list{
+    position: relative;
+    margin: 0 0 40px 0;
+    display: inline-block;
+}
+
+.section-bubble6 .social-media .footer-list li{
+    float: left;
+    margin-right: 10px;
+}
+
+.section-bubble6 .social-media .footer-list li a{
+    position: relative;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 0.5rem;
+    color: black;
+}
