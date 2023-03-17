@@ -230,7 +230,7 @@
                     <input id="email" name="email" type="email" class="contact-form-text" placeholder="Email" required>
                     <input id="number" name="number" type="text" class="contact-form-text" placeholder="Phone number">
                     <textarea id="message" name="message" class="contact-form-text" placeholder="Message" required></textarea>
-                    <input id="button" type="submit" class="contact-form-btn" value="Send">
+                    <input id="formButton" name="formButton" type="submit" class="contact-form-btn" value="Send">
                 </form>
                 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
                 </script>
@@ -247,14 +247,16 @@
             <div class="container">
                 <div class="social-media text-center">
                     <ul class="footer-list">
-                        <li><a href="#"><i class='bx bxl-linkedin-square'></i></a></li>
-                        <li><a href="#"><i class='bx bxs-envelope'></i></a></li>
-                        <li><a href="#"><i class='bx bxl-github'></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/catarinalf/"><i class='bx bxl-linkedin-square'></i></a></li>
+                        <li><a href="#" data-toggle="tooltip" title="Copy email to clipboard"><i class='bx bxs-envelope' onclick="copyEmailToClipboard()"></i></a></li>
+                        <li><a href="https://github.com/catarinalf"><i class='bx bxl-github'></i></a></li>
                     </ul>
                 </div>
-                <br /><br /><br /><br />
+                <p>Designed and coded by Catarina Ferreira © 2023 All Rights Reserved.</p>
             </div>
         </section>
+
+        <script src="clipboard.js"></script>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
