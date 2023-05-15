@@ -1,6 +1,6 @@
-# catarinalf.github.io
+# My portfolio
 
-This repository contains the source code and content for [catarinalf.github.io](https://catarinalf.github.io), a personal website showcasing my portfolio and other projects.
+This repository contains the source code and content for [catarinalf.github.io](https://catarinalf.github.io), my personal website showcasing my portfolio and other projects.
 
 ## Usage
 
